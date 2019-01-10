@@ -1,5 +1,7 @@
 package fp.daw.examen;
 
+import java.util.Random;
+
 public class Ejercicio1 {
 
 	/* 
@@ -27,6 +29,28 @@ public class Ejercicio1 {
 	
 	public static void main(String[] args) {
 		
+		
+		Random aleatorio= new Random();
+		
+	
+		
+		int numero = aleatorio.nextInt(100) + 10;
+		System.out.print(numero + " ");
+		do {
+		if (numero%2==0) {
+			int par = numero / 2;
+			int resultadopar= numero/par;
+			System.out.print ( par +" " + resultadopar);
+			resultadopar = numero;
+		}
+		if (numero%2==1) {
+			int impar = numero *3 +1 ;
+			int resultadoimpar = numero/impar;
+			System.out.print(impar + " "+ resultadoimpar);
+			resultadoimpar =numero;
+		}
+		} while (numero==0);
 	}
+	
 	
 }

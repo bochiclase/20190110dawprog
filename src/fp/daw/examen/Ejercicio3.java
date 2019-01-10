@@ -32,7 +32,16 @@ public class Ejercicio3 {
 	 *       
 	 */  
 	
-	public static ...
+	public static char [] escalera (int peldaños, int orientacion) {
+		
+		for ( int i=0; i<peldaños; i++) {
+			for (int j=0; j<orientacion; j++) {
+				
+				  char [] []array = new char [i] [j];
+				  
+			}
+		}
+	}
 
 	
 	public static void mostrarEscalera(String [] escalera) {
